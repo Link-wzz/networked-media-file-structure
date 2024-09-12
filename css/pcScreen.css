@@ -1,0 +1,416 @@
+@font-face {
+    font-family:JockeyOne;
+    src: url(../fonts/JockeyOne-Regular.ttf);
+}
+
+#Button{
+    width:50%;
+    height:400px;
+    /* border: 1px solid black; */
+    text-align: center;
+
+}
+
+#vendingMachineStill{
+    /* border: 1px solid black; */
+    width:19%;
+    height:auto;
+}
+
+#vendingMachine{
+    background: url(../image/Vending.png) no-repeat center;
+    background-size: 100%;
+    height:630px;  /*the height and width can not be changed, since the backgroud is the vending machine*/
+    width:400px;
+    /* border: 1px solid black; */
+    /* margin-top: 5vh; */
+    margin-left:37vw;
+    margin-right:30vw;
+    display: flex;
+
+}
+#choosingArea{
+    /* border: 1px solid Green; */
+    display: flex;
+    width:77%;
+    height:40%;
+    margin-left: 8%;
+    margin-top: 14%;
+    flex-wrap: wrap;
+}
+
+#drinksClickDetact01{
+    width:80px;
+    height:30%;
+    margin-bottom: 0px;
+}
+#drinksClickDetact02{
+    width:34%;
+    height:30%;
+    float: left;
+
+}
+#drinksClickDetact03{
+    width:34%;
+    height:30%;
+    float: left;
+}
+
+#drinksClickDetact04{
+    width:39%;
+    height:30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+#drinksClickDetact05{
+    width:43%;
+    height:30%;
+}
+#drinksClickDetact06{
+    width:12%;
+    height:30%;
+}
+#drinksClickDetact07{
+    width:27%;
+    height:32%;
+}
+#drinksClickDetact08{
+    width:22%;
+    height:32%;
+}
+#drinksClickDetact09{
+    width:22%;
+    height:32%;
+}
+#drinksClickDetact10{
+    width:22%;
+    height:32%;
+}
+
+
+.drinksClickDetact{
+    /* border: 1px solid black; */
+    width:170%;
+    height:12%;
+    float:left;
+}
+
+.floatBox{
+    position: absolute;
+    background-color: 100,100,100,0.9;
+    margin-left:-300px;
+    /* border: 1px solid black; */
+    width:1000px;
+    height:600px;
+    opacity: 0;
+    pointer-events: none;
+    transition:opacity 0.5s;
+
+}
+
+
+.Drink{
+        z-index: 1;
+        position:absolute;
+        /* border: 1px solid blue; */
+        width:20%;
+
+}
+
+#Note{
+    position:absolute;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 16vh;
+    /* border: 1px solid black; */
+    /* opacity:0; */
+}
+
+#noteImage{
+    width:950px;
+    transform: rotate(+1deg);
+}
+
+
+#campingImage {
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#pathImage {
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#beachImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#leavesImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#towerImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#sunsetImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#bridgeImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#streetImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+#shenzhenImage{
+    box-shadow: 8px 5px 12px rgba(0, 0, 0, 0.5); 
+}
+
+
+/* ALL Photos Goes HERE!*/
+
+#cokeImage{
+    margin-top: -45px;
+    width:260px;
+
+}
+#campingImage{
+    margin-left: 10%;
+    margin-top: 1%;
+
+    width:900px;
+    border-radius: 0.3%;
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+
+#canImage{
+    margin-top: 170px;
+    width:260px;
+}
+#pathImage{
+      margin-left: 10%;
+      margin-top: 10px;
+      width:900px;
+      border-radius: 0.3%;
+      opacity: 0;
+      transition:opacity 0.5s;
+}
+
+#waterImage{
+    margin-top: 20px;
+    margin-left: -10%;
+    width:280px;
+
+}
+#beachImage{
+      margin-left: 10%;
+    margin-top: 1%;
+
+      width:900px;
+      border-radius: 0.3%;
+      opacity: 0;
+      transition:opacity 0.5s;
+}
+
+#drink01Image{
+    margin-top: 20px;
+    margin-left: 70px;
+    width:280px;
+
+}
+#leavesImage{
+      margin-left: 10%;
+      margin-left: 280px;
+      margin-top: -20px;
+      width:460px;
+      border-radius: 0.3%;
+      opacity: 0;
+      transition:opacity 0.5s;
+}
+
+#energyDrinkImage{
+    margin-top: 90px;
+    margin-left: 100px;
+    width:280px;
+
+}
+#towerImage{
+      margin-left: 10%;
+      margin-left: 280px;
+      margin-top: -20px;
+      width:460px;
+      border-radius: 0.3%;
+      opacity: 0;
+      transition:opacity 0.5s;
+}
+
+#drink03Image{
+    margin-top: 36px;
+    margin-left: -60px;
+    width:280px;
+}
+#sunsetImage{
+    margin-left: 10%;
+    margin-top: 10px;
+      width:900px;
+      border-radius: 0.3%;
+      opacity: 0;
+      transition:opacity 0.5s;
+}
+
+#drink02Image{
+    margin-top: 80px;
+    margin-left: -60px;
+    width:300px;
+}
+#bridgeImage{
+    margin-left: 10%;
+      width:900px;
+      border-radius: 0.3%;
+      margin-top: 10px;
+      opacity: 0;
+      transition:opacity 0.5s;
+}
+
+#coffeeImage{
+    margin-top: 220px;
+    margin-left: 90px;
+    width:280px;
+}
+#streetImage{
+    margin-left: 10%;
+    margin-left: 260px;
+    margin-top: -60px;
+    width:500px;
+    border-radius: 0.3%;
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+
+#coke2Image{
+    margin-top: 120px;
+    margin-left: 100px;
+    width:230px;
+}
+#shenzhenImage{
+    margin-left: 10%;
+    margin-left: 260px;
+    margin-top: -60px;
+    width:500px;
+    border-radius: 0.3%;
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+
+#exit-left{
+    /* position: fixed; */
+    float:left;
+    /* border: 1px solid blue; */
+    width:35vw;
+    height:65vh;
+}
+
+#exit-right{
+    /* display: flex; */
+    float:right;
+    /* position: fixed; */
+    margin-left: 65vw;
+    margin-top:-700px;
+    /* border: 1px solid blue; */
+    width:30vw;
+    height:80vh;
+}
+
+#exit-up{
+    /* border: 1px solid blue; */
+    height:20vh;
+    color:rgb(192, 192, 192);
+    font-size:2%;
+}
+
+
+#exit-down{
+    /* border: 1px solid green; */
+    height:18vh;
+}
+
+
+#MainBody{
+    background-color: #fff7e9;
+}
+
+body{
+    margin:0;
+}
+
+
+#beachStory{
+    width:600px;
+    margin-left: 380px;
+    margin-top: -70px;
+    color: rgb(0, 158, 206);
+
+}
+
+.story{
+    height: 100px;
+    position:absolute;
+    font-size:20px;
+    font-family: JockeyOne;
+    opacity: 0;
+    text-align: right;
+    transition:opacity 3s;
+    color: rgb(255, 255, 255);
+
+}
+
+#pathStory{
+    width:600px;
+    margin-left: 380px;
+    margin-top: -70px;
+}
+
+#campingStory{
+    width:680px;
+    margin-left: 300px;
+    margin-top: -40px;
+
+}
+
+#leavesStory{
+    width:430px;
+    margin-left: 300px;
+    margin-top: -70px;
+
+}
+
+
+#towerStory{
+    width:430px;
+    margin-left: 300px;
+    margin-top: -70px;
+}
+
+#sunsetStory{
+    width:500px;
+    margin-left: 490px;
+    margin-top: -70px;
+}
+
+#bridgeStory{
+    width:500px;
+    margin-left: 490px;
+    margin-top: -70px;
+}
+
+#streetStory{
+    width:400px;
+    margin-left: 350px;
+    margin-top: -40px;
+}
+
+#shenzhenStory{
+    width:400px;
+    margin-left: 350px;
+    margin-top: -65px;
+}
+
+
+/* Here is the css for mobile verson */
+
