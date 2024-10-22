@@ -1,0 +1,321 @@
+@font-face {
+    font-family: STZhongsongRegular;
+    src: url(/STZhongsongRegular.ttf);
+}
+
+
+body{
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    overflow: hidden;
+}
+
+#head{
+    border: 1px solid red;
+    width: 100vw;
+    height: 50px;
+}
+
+
+/* navbox  */
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffe9b2;
+}
+
+#otherThreeBox{
+    border: 1px solid blue;
+    width: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.navBoxes{
+    /* font-family: STZhongsongRegular; */
+    border: 1px solid green;
+    font-size: 18px;
+    color: rgb(9, 149, 204);
+    width: 130px;
+    height: 50px;
+    text-align: center;
+}
+.navBoxes:hover{
+    transition: 130ms ease;
+    /* transition: 1300ms ease-out; */
+
+    background-color: rgb(12, 167, 228);
+    color: #ffe9b2;;
+}
+
+#aboutBox{
+    width: 120px;
+    
+}
+.clickBox{
+    line-height: 0.8;
+
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+
+
+
+/* Mainpart starts from here */
+#maindiv{
+    /* border:1px solid green; */
+    width: 100vw;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffcf4;
+
+}
+#askSth{
+    border: 1px solid red;
+    width: 64vw;
+    height: 100px;
+    line-height: 0.5;
+}
+#askText{
+    color:rgb(2, 179, 249);
+    font-family: STZhongsongRegular;
+    font-size:
+     50px;
+}
+
+#instruction{
+    border:1px solid red;
+    width: 64vw;
+    height: 50px;
+    color: rgb(2, 179, 249);
+    font-family: STZhongsongRegular;
+}
+#central-body{
+    border: 2px solid red;
+    background-color: #ffffff;
+    width:64vw;
+    height: 54vh;
+    position: relative; 
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 3vh;
+    box-shadow: 0px 1.5px 6px 1px #c8c4bb;
+
+}
+
+#titleAndBtnArea{
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 10px;
+    height: 9vh;
+
+}
+
+#title{
+    border: 1px solid blue;
+    width:56vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border:1px solid #ea00ff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+ 
+}
+
+#submitButton{
+    width: 8vw;
+    height: 80px;
+    border: none;
+    background-color: #fff5de;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+#publishIcon{
+    width: 60px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#publishIcon:hover{
+    filter: drop-shadow(0px 0px 2px #b5afa4);
+    transform: scale(1.14);
+    transition: 200ms ease;
+    
+}
+
+#maintext{
+    /* margin-top: 20px; */
+    width:64vw;
+    height: 24vh;
+    border:1.5px solid #f60000;
+}
+
+
+#areaContainer{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+#tagsArea{
+    border: 1px solid blue;
+    width:63vw;
+    height: 10vh;
+}
+#tagsArea:empty::before {
+    content: "Click the below tags to add, click again to remove"; /* 设置占位符文本 */
+    color: rgb(9, 135, 219);
+    opacity: 0.3;
+    margin: 18px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+#tagsPool{
+    border: 1px solid blue;
+    width:63vw;
+    height:11vh;
+}
+#poolContainer{
+    border: 1px solid blue;
+    background-color: #fff5de;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+}
+
+
+
+/* for the input tags */
+#blogTitleArea{
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    /* margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px; */
+    font-size: 30px;
+    border:none;
+    background-color: #ffffff;
+    width: 64vw;
+    height: auto;
+    padding-left: 30px;
+    color: rgb(17, 183, 249);
+    /* font-family: Arial Bold, Helvetica, sans-serif; */
+    /* border-bottom: 3px solid #fff5de; */
+    border-top-left-radius: 10px;
+}
+#blogTitleArea::placeholder{
+    font-size: 30px;
+    opacity: 0.3;
+    color: rgb(9, 135, 219);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+#blogTitleArea:focus{
+    outline: none;
+}
+
+#blogBodyArea{
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #ffffff;
+    width: 63vw;
+    /* box-shadow: 0px 1px 3px 0.1px #c9c6c2; */
+    resize: none;
+    padding-left: 30px;
+    padding-top: 15px;
+    color: rgb(17, 183, 249);
+    text-align: justify;
+    height: 24vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* 隐藏滚动条 */
+   
+}
+#blogBodyArea::placeholder{
+    font-size: 20px;
+    opacity: 0.3;
+    color: rgb(9, 135, 219);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#blogBodyArea:focus{
+    outline: none;
+}
+
+/* For tags Area */
+.tp{
+    all: unset; /* CSS3 的属性，移除所有继承和默认样式 */
+    background-color: rgb(0, 144, 201);
+    border-radius: 15px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-right:5px;
+    margin-top: 10px;
+}
+
+.tp:hover{
+    filter: drop-shadow(0px 0px 2px #aba494);
+    transform: scale(1.05);
+    transition: 150ms ease;
+    background-color: rgb(11, 186, 255);
+    cursor: pointer
+}
+
+.ta{
+    all: unset; /* CSS3 的属性，移除所有继承和默认样式 */
+    background-color: rgb(17, 183, 249);
+    border-radius: 15px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-right:5px;
+}
+
+.ta:hover{
+    filter: drop-shadow(0px 0px 2px #b5b5b5);
+    transform: scale(1.05);
+    transition: 150ms ease;
+    cursor: pointer
+}
+
+
+
+*{
+    border: none !important;
+}
+
+

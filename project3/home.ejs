@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div id="head">
+        <%- include("nav.ejs", {}) %>
+    </div> 
+    <div id="main">
+            <div id="title">
+                <p id="pollpedia">Pollpedia</p>
+            </div>
+            <div id="contentArea">
+                <div id="instruction">
+                    Welcome to PollPedia! An online encyclopedia for Yes/No questions.
+                     Write down any binary question that leaves you undecided and send it out—other users will see it and vote for you,
+                     giving you their opinions! 
+                     <br>
+
+                     You can also explore posts from other users. When you come across a question 
+                     that interests you, don't hesitate to vote to show your stance and see how other users have responded!
+
+                </div>
+            </div>
+            <div id="postBtn">
+                <div id="postBtnArea">
+                    <a href="/postEdit">
+                        <img id="postIcon" src="/images/post.png">
+                    </a>
+                </div>
+            </div>
+    </div>  
+    
+</body>
+</html>
