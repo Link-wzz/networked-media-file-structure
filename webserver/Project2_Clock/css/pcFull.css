@@ -1,0 +1,165 @@
+
+body{
+    margin:0px;
+    overflow: hidden;
+    background-color: #323232;
+    /* position:relative; */
+}
+
+#authorInfo{
+    color:#4d4d4d;
+    font-size: 14px;
+    margin:5px;
+    position:absolute;
+    
+}
+
+#headingArea{
+    height:59.5vh;
+    width:100%;
+}
+
+#clockArea{
+    width:100%;
+}
+
+#innerClock{
+    display: flex;
+    margin-left: 5vw;
+    height:40.5vh;
+    width:90vw;
+    justify-content: space-around;
+}
+
+.handArea{
+    width:21vw;
+    height:auto;
+    position: relative;
+}
+
+
+
+#hourTens{
+    transition: transform 2s;
+}
+#hourSingle{
+    transition: transform 2s;
+}
+#minuteTens{
+    transition: transform 2s;
+}
+#minuteSingle{
+    transition: transform 2s;
+
+}
+
+
+#hourTens{
+    width:21vw;
+    height:auto;
+    position: relative;
+    transform: translate(0px,0px);
+}
+
+
+
+#dot1{
+    background-color: rgb(255, 255, 255);
+    width:1.6vw;
+    height:1.6vw;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 11vh;
+
+}
+
+#dot2{
+    background-color: rgb(255, 255, 255);
+    /* border:1px solid red; */
+    width:1.6vw;
+    height:1.6vw;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3vh;
+}
+
+#colonArea{
+    /* border:1px solid red; */
+    width:30px;
+    transform: translate(-1vw);
+}
+
+
+/* ALL Hand class Imgs adjustment Here */
+
+.hand0{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:19vw;
+    bottom: 0px;
+}
+.hand1{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:4.8vw;
+    left:8vw;
+    bottom: 0px;
+}
+.hand2{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:13vw;
+    left:4vw;
+    bottom: 0px;
+}
+.hand3{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:10.4vw;
+    left:5vw;
+    bottom: 0px;
+}
+.hand4{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:17vw;
+    bottom: 0px;
+}
+.hand5{
+    position: absolute;
+
+    /* border: 1px solid yellow; */
+    width:21vw;
+    bottom: 0px;
+}
+.hand6{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:17.5vw;
+    bottom: 0px;
+}
+.hand7{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:8.3vw;
+    left: 5vw;
+    bottom: 0px;
+}
+.hand8{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:15.6vw;
+    bottom: 0px;
+}
+.hand9{
+    position: absolute;
+    /* border: 1px solid yellow; */
+    width:16vw;
+    bottom: 0px;
+}
+
+.IMG{
+    filter: drop-shadow(2px 2px 15px #121212);
+}
+
+
