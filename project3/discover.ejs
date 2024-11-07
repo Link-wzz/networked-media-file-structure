@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Page</title>
+    <link rel="stylesheet" href="/css/discover.css">
+</head>
+<body>
+
+    <div id="detailPostPage">
+        <div id="yesArea" >
+            <p id="yes">Yes</p>
+        </div>
+        <div id="noArea">
+            <p id="no">No</p>
+        </div>
+        <div id="postDetail">
+            <div id="titleAndExit">
+                <div id="title">Title Goes Here</div>
+                <div id="exit">
+                    <img id="exitImg" src="/images/exitIcon.svg">
+                </div>
+            </div>
+                
+            <div id="body">
+                Real-Time Word Count: As you type or paste your text into our tool, the word count updates instantly. No need to hit a button or refresh the page; just watch the numbers change in real time.Character and Sentence Count: In addition to word count, our tool provides detailed statistics, including the number of characters (with and without spaces) and the total number of sentences. This comprehensive data can help you meet specific formatting requirements or writing guidelines.sParagraph Breakdown: Gain insights into the structure of your writing with paragraph counts. This feature can help you assess the readability and flow of your text, making it easier to identify areas for improvement.Easy Text Input: You can either type directly into the text box or copy and paste your content from other applications. The intuitive interface ensures a seamless experience, regardless of how you prefer to input your text.User-Friendly Design: 
+            </div>
+            <div id="information">
+                <div id="tags"></div>
+                <div id="uploadTime"></div>
+            </div>
+            <div id="voteResult">
+                <div id="voteInstruction">Share your voice! Hover and click on the sides of the screen to vote!</div>
+                <div id="graph">
+                    <div id="yesPercentage">
+                        <div id="yesNumber"></div>
+                    </div>
+                    <div id="graphN">
+                        <div id="noPercentage">
+                            <div id="noNumber"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="head">
+        <%- include("nav.ejs", {}) %>
+    </div>
+    <div id="main">
+
+        <div id="pagtTitle">
+            <div id="discover">Let's vote!</div>
+        </div>
+        <div id="content">
+            <div id="indexBar">
+                <div id="categoryTitle">
+                    Category
+                </div>
+                <div id="categoryArea">
+                    <div class="categories" id="FoodDrink">Food&Drink</div>
+                    <div class="categories" id="Fashion">Fashion</div>
+                    <div class="categories" id="Shopping">Shopping</div>
+                    <div class="categories" id="Entertainment">Entertainment</div>
+                    <div class="categories" id="FitnessHealth">Fitness&Health</div>
+                    <div class="categories" id="Education">Education</div>
+                    <div class="categories" id="Career">Career</div>
+                    <div class="categories" id="Business">Business</div>
+                    <div class="categories" id="SocialIssues">Social Issues</div>
+                    <div class="categories" id="Ethics">Ethics</div>
+                    <div class="categories" id="Politics">Politics</div>
+
+                </div>
+            </div>
+            <div id="contentContainer">
+                <div id="contentArea">
+
+                    <% if (posts.length >0){%>
+                        <% posts.forEach( post=> { %>
+                            <div class="post" data-id="<%= post.postNumber %>">
+                                <div class="postTitle">
+                                    <!-- If it is larger than the capacity of the div, cut a portion for display -->
+                                    <% if(post.blogTitle.length > 73) { %>
+                                       <%= post.blogTitle.substring(0,73) +"..." %>
+                                    <%  }else{ %>
+                                        <%= post.blogTitle %>
+                                    <% } %>
+                                </div>
+                                <div class="postBody">
+                                    <% if (post.blogBody.length > 250) { %>
+                                        <%= post.blogBody.substring(0,250) + '...' %>
+                                    <% } else { %>
+                                        <%= post.blogBody %>
+                                    <% } %>
+                                </div>
+                                <div class="information">
+                                    <div class="PreviewTags">
+                                    <%- post.tagsHtml %>
+                                    </div>
+                                    <%= post.date %>
+                                </div>
+                            </div>
+                       <% }) %>
+                    <% } else{ %>
+                        <p> no posts</p>
+                    <% } %>
+
+
+                </div>
+                <div id="end">
+                    You've reached the end of the posts. Scroll up to explore other categories!
+                </div>
+            </div>
+            
+        </div>
+        <!-- <div id="footer">
+                       
+        </div> -->
+        
+    </div>
+
+    <script src="/discover.js"></script>
+</body>
+</html>

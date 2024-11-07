@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Edit page</title>
+    <link rel="stylesheet" href="/css/postEdit.css">
+</head>
+<body>
+    <div id="head">
+        <%- include("nav.ejs", {}) %>
+    </div> 
+    <div id="maindiv">
+        <div id="askSth">
+            <p id="askText">Ask something!</p>
+        </div>
+        <div id="instruction">
+            Create your post here! Notice that your question should be a binary question, which means the answer can only be Yes or No. All post will be anonymous, so feel free to ask anything!
+        </div>
+        <div id="central-body">
+            
+            <form method="POST" action="/blogUpload" onsubmit="return validateForm()" enctype="application/x-www-form-urlencoded">
+                <div id="titleAndBtnArea">
+                    <div id="title">
+                        <input type="text" id="blogTitleArea" maxlength="150" name="blogTitle" placeholder="Title">
+                    </div>
+
+                    <div id="buttonArea">
+                        <!-- from chat -->
+                        <button type="submit" id="submitButton"name="publishBtn">
+                            <img id="publishIcon" src="/images/publish.svg">
+                        </button>
+                    </div>
+                </div>
+                <div id="maintext">
+                    
+                    <textarea type="text" id="blogBodyArea" maxlength="970" name="blogBody"  placeholder="What happens?"></textarea>
+                </div>
+                <input type="hidden" id="selectedTags" name="selectedTags" value=""> 
+                <div id="areaContainer">
+                    <div id="tagsArea"></div>
+                </div>
+
+                <div id="poolContainer">
+                    <div id="tagsPool">
+                        <button type="button" class="tp">Food&Drink</button>
+                        <button type="button" class="tp">Fashion</button>
+                        <button type="button" class="tp">Shopping</button>
+                        <button type="button" class="tp">Entertainment</button>
+                        <button type="button" class="tp">Fitness&Health</button>
+                        <button type="button" class="tp">Education</button>
+                        <button type="button" class="tp">Career</button>
+                        <button type="button" class="tp">Business</button>
+                        <button type="button" class="tp">Social Issues</button>
+                        <button type="button" class="tp">Ethics</button>  
+                        <button type="button" class="tp">Politics</button>
+    
+                    </div>
+                </div>
+         
+            </form>
+    
+        </div>
+    </div>
+    <script src="/postEdit.js"></script>
+</body>
+</html>

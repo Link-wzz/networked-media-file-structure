@@ -1,0 +1,220 @@
+@font-face {
+    font-family: STZhongsongRegular;
+    src: url(/STZhongsongRegular.ttf);
+}
+
+
+body{
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    overflow: hidden;
+}
+
+#head{
+    border: 1px solid red;
+    width: 100vw;
+    height: 50px;
+}
+
+
+/* navbox  */
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffe9b2;
+}
+
+#otherThreeBox{
+    border: 1px solid blue;
+    width: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+    
+}
+
+.navBoxes{
+    /* font-family: STZhongsongRegular; */
+    border: 1px solid green;
+    font-size: 18px;
+    color: rgb(9, 149, 204);
+    width: 130px;
+    height: 50px;
+    text-align: center;
+}
+.navBoxes:hover{
+    transition: 130ms ease;
+    /* transition: 1300ms ease-out; */
+
+    background-color: rgb(12, 167, 228);
+    color: #ffe9b2;;
+}
+
+#aboutBox{
+    width: 120px;
+    
+}
+.clickBox{
+    line-height: 0.8;
+
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+
+/* Here is the main part */
+
+
+#main{
+    border: 1px solid green;
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcf4;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    border: 1px solid orange;
+    width:100vw;
+    height: 320px;
+}
+#pollpedia{
+    color:rgb(2, 179, 249);
+    margin-bottom: 0;
+    font-family: STZhongsongRegular;
+    font-size: 90px;
+}
+
+/* 
+#searchBox-Container{
+    border: 1px solid orange;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#searchbox{
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 740px;
+    height: 44px;
+    border-radius: 22px;
+    box-shadow: 0px 1.4px 6px 0.1px #bab5ae;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#searchIcon{
+    color: yellow;
+    border: 1px solid black;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:15px;
+
+}
+#searchArea{
+    border: 1px solid black;
+    width: 670px;
+} */
+
+
+#contentArea{
+    border: 1px solid red;
+    width: 100vw;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#instruction{
+    margin-top: 2vh;
+    border: 1px solid red;
+    width: 900px;
+    height: 100px;
+    color: rgb(2, 179, 249);
+    font-family: STZhongsongRegular;
+    font-size: 18px;
+    /* background-color: rgba(224, 218, 179, 0.608); */
+    /* filter: drop-shadow(0px 0px 3px #c3beb7);
+    border-radius: 5px; */
+    text-align:center;
+}
+
+/* Post Area */
+#postBtn{
+    border: 1px solid black;
+    height: 20vh;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#postBtnArea{
+    border: 1px solid black;
+    width: 90px;
+    margin-bottom:35px;
+    margin-right:68px;
+
+}
+#postIcon{
+    width: 90px;
+    filter: drop-shadow(1px 2px 3px #c3beb7);
+}
+#postIcon:hover{
+    transform: scale(1.1) translate(-3px, -3px);
+    transition: 70ms ease;
+    filter: drop-shadow(2px 2px 3px #bbb7af)
+
+}
+
+
+/* for the input tags */
+#inputArea{
+    border: 1px solid red;
+    font-size: 30px;
+    /* border:none; */
+    background-color: #ffffff;
+    width: 650px;
+    height: 40px;
+    padding-left: 0px;
+    color: rgb(17, 183, 249);
+    /* font-family: Arial Bold, Helvetica, sans-serif; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#inputArea::placeholder{
+    font-size: 20px;
+    opacity: 0.3;
+    color: rgb(9, 135, 219);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+#inputArea:focus{
+    outline: none;
+    font-size: 20px;
+
+}
+
+*{
+    border: none !important;
+}

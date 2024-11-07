@@ -1,0 +1,159 @@
+
+body{
+    margin:0px;
+    overflow: hidden;
+    background-color: #323232;
+}
+
+#authorInfo{
+    color:#4d4d4d;
+    font-size: 14px;
+    margin:5px;
+    /* border: 1px solid black; */
+    position:absolute;
+    
+}
+
+#headingArea{
+    /* border: 1px solid black; */
+    height:59.5vh;
+    width:100%;
+}
+#clockArea{
+    /* height:41vh; */
+    width:100%;
+}
+#innerClock{
+    display: flex;
+    margin-left: 5vw;
+    height:40.5vh;
+    width:90vw;
+    justify-content: space-around;
+}
+/* Hand Area */
+
+.handArea{
+    width:21vw;
+    height:auto;
+    position: relative;
+}
+
+#hourTens{
+    transition: transform 2s;
+}
+#hourSingle{
+    transition: transform 2s;
+}
+#minuteTens{
+    transition: transform 2s;
+}
+#minuteSingle{
+    transition: transform 2s;
+    /* transform: translate(0px,20vw); */
+
+}
+
+
+#hourTens{
+    width:21vw;
+    height:auto;
+    position: relative;
+    transform: translate(0px,0px);
+}
+
+
+
+/*colon Goes here  */
+#dot1{
+    background-color: rgb(255, 255, 255);
+    width:1.7vw;
+    height:1.7vw;
+    border-radius: 50%;
+    margin-bottom: 9vw;
+
+
+
+}
+
+#dot2{
+    background-color: rgb(255, 255, 255);
+    width:1.7vw;
+    height:1.7vw;
+    border-radius: 50%;
+    margin-bottom: 2vw;
+
+}
+
+#colonArea{
+    display: flex;
+    width:30px;
+    height: auto;
+    transform: translate(-2vw);
+    flex-direction: column-reverse; 
+    justify-content: flex-start; 
+    align-items: center; 
+
+}
+
+
+/* ALL Hand class Imgs adjustment Here */
+
+.hand0{
+    position: absolute;
+    width:19vw;
+    bottom: 0px;
+}
+.hand1{
+    position: absolute;
+    width:4.8vw;
+    left:8vw;
+    bottom: 0px;
+}
+.hand2{
+    position: absolute;
+    width:13vw;
+    left:4vw;
+    bottom: 0px;
+}
+.hand3{
+    position: absolute;
+    width:10.4vw;
+    left:5vw;
+    bottom: 0px;
+}
+.hand4{
+    position: absolute;
+    width:17vw;
+    bottom: 0px;
+}
+.hand5{
+    position: absolute;
+
+    width:21vw;
+    bottom: 0px;
+}
+.hand6{
+    position: absolute;
+    width:17.5vw;
+    bottom: 0px;
+}
+.hand7{
+    position: absolute;
+    width:8.3vw;
+    left: 5vw;
+    bottom: 0px;
+}
+.hand8{
+    position: absolute;
+    width:15.6vw;
+    bottom: 0px;
+}
+.hand9{
+    position: absolute;
+    width:16vw;
+    bottom: 0px;
+}
+
+.IMG{
+    filter: drop-shadow(2px 2px 15px #121212);
+}
