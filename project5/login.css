@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: ShadowsIntoLight;
+    src: url("../fonts/ShadowsIntoLightTwo-Regular.ttf");
+}
+
+body{
+    border: 1px solid black;
+
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    font-family: ShadowsIntoLight;
+}
+
+/* Nav css *****************************START********************************/
+#navBar{
+    border: 1px solid black;
+    width: 100vw;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px ;
+}
+#leftTwo{
+    border: 1px solid black;
+    display: flex;
+    width: 50vw;
+    height: 60px;
+    flex-direction: row;
+    align-items: end;
+}
+#rightTwo{
+    border: 1px solid black;
+    display: flex;
+    width: 50vw;
+    height: 60px;
+    flex-direction: row-reverse;
+    align-items: end;
+
+}
+.navBox{
+    border: 1px solid black;
+    height: 40px;
+    width: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+}
+.navBox:hover{
+    /* background-color: #e8e8e8; */
+    background-image:url("../images/GreyBrush.png");
+    background-size: cover;
+}
+#About{
+    margin-left: 22px;
+}
+#Home{
+    margin-left: 22px;
+    
+}
+
+#Gallery{
+    margin-right: 22px;
+}
+#Personal{
+    margin-right: 22px;
+    
+}
+/* Nav css *****************************ENDS********************************/
+
+#main{
+    border: 1px solid black;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    border: 1px solid black;
+    width: 600px;
+    height: 120px;
+    margin-top: 20px;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 40px;
+}
+#loginBox{
+    border: 1px solid black;
+    width: 380px;
+    height: 450px;
+    background-color: rgb(212,255,0);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    filter: drop-shadow(0px 0px  4px rgb(196, 199, 182));
+
+}
+#loginTitle{
+    border: 1px solid black;
+    font-size: 34px;
+    width: 380px;
+    margin-top: 30px;
+    text-align: center;
+}
+#loginForm{
+    border: 1px solid black;
+    width: 380px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#loginUsername{
+    margin-top: 20px;
+    width: 320px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: rgb(255,255,255);
+
+}
+#loginPassword{
+    width: 320px;
+    height: 44px;
+    margin-top: 20px;
+    background-color: rgb(255,255,255);
+    border-radius: 4px;
+
+}
+
+#loginSubmitBtn{
+    margin-top: 25px;
+    width: 235px;
+    height: 60px;
+    background-size: contain;
+    background-color: rgb(212,255,0);
+    font-family: ShadowsIntoLight;
+    font-size: 22px;
+    color: rgb(0,0,139);
+}
+
+#loginSubmitBtn:hover{
+    color: rgb(255,255,255);
+    font-size: 26px;
+    
+    background-image: url('../images/BlueBrush.png');
+    transition: ease 150ms;
+    transform: rotate(5deg);
+
+}
+
+#singUpRoute:hover{
+    transform: scale(1.04);
+}
+
+
+
+
+
+*{
+    border: none !important;
+}

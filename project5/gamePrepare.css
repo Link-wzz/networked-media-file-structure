@@ -1,0 +1,127 @@
+/* Here is the css for the home page */
+
+@font-face {
+    font-family: ShadowsIntoLight;
+    src: url("../fonts/ShadowsIntoLightTwo-Regular.ttf");
+}
+
+body{
+    border: 1px solid black;
+
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    font-family: ShadowsIntoLight;
+}
+
+#GoBackBox{
+    border: 1px solid black;
+    
+    position: absolute;
+    width: 156px;
+    height: 40px;
+    left: 50px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+#GoBackBox:hover{
+    background-image:url("../images/GreyBrush.png");
+    background-size: cover;
+}
+
+
+
+#centerBox{
+    border: 1px solid black;
+    width: 100vw;
+    height: 200px;
+    margin-top:32vh;
+    display: flex;
+}
+
+#themeis{
+    border: 1px solid black;
+    width: 44vw;
+    height: 60px;
+    margin-top: 40px;
+
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+#theme{
+    border: 1px solid black;
+    width: 600px;
+    height: 180px;
+    font-size: 76px;
+    padding-left: 16px;
+    padding-top: 20px;
+
+}
+#nextPageBox{
+    border: 1px solid black;
+    width: 600px;
+    height: 130px;
+    position: absolute; 
+    right: 30px;
+    bottom: 38px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+#readyTextBox{
+    border: 1px solid black;
+    height: 60px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#goBox{
+    border: 1px solid black;
+    height: 50px;
+    width: 170px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    background-image: url('../images/brush.png');
+    background-size: cover;
+}
+#goBox:hover{
+    transform: scale(1.06);
+    transition: 110ms ease;
+    
+}
+#go{
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    padding-left: 70px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+*{
+    border: none !important;
+}
