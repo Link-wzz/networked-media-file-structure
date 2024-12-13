@@ -1,0 +1,29 @@
+<% if (painting.author === user.username) { %>
+    <div class="doodleUnit">
+        <div class="paintingArea">
+            <% if (painting.ratio === "11") { %>
+                <div class="CanvasSquare">
+                    <img class="squareImage" src="<%= painting.image %>" />
+                </div>
+            <% } else if (painting.ratio === "43") { %>
+                <div class="CanvasLong">
+                    <img class="longImage" src="<%= painting.image %>" />
+                </div>
+            <% } else if (painting.ratio === "32") { %>
+                <div class="CanvasTall">
+                    <img class="tallImage" src="<%= painting.image %>" />
+                </div>
+            <% } %>
+        </div>
+        <div class="walltextArea">
+            <div class="wallText">
+                <div class="wallTextAuthor"><%= painting.author %></div>
+                <div class="wallTextName"><%= painting.name %></div>
+                <div class="wallTextTime"><%= painting.createdTime %></div>
+            </div>
+
+
+        </div>
+    </div>
+<% } %>
+    

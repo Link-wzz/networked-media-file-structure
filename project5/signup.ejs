@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/signUp.css">
+
+</head>
+<body>
+    <%- include("nav.ejs", {}) %>
+    <div id="main">
+        <div id="title">TODAY's DOODLE</div>
+        <div id="signupBox">
+            <div id="signupTitle">Sign Up</div>
+            <form method="POST" action="/SignUp" id="signupForm">
+                <input type="text" name="username" id="signUpusername"  placeholder="username">
+                <input type="password"  name="password" id="signUpPassword" placeholder="password">
+                <input type="submit" name="submitbutton" id="signUpSubmitBtn" value="Next" class="submit-btn">
+            </form>
+            <a href="/login"style=" color: inherit; "><div id="singUpRoute">Already have an account? Log in here</div></a>
+
+        </div>
+
+    </div>
+</body>
+</html>

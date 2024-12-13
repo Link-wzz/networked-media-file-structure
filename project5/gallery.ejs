@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+<body>
+    <%- include("nav.ejs", {}) %>
+    <div id="main-container">
+        <div id="TitleBox">
+            <div id="BigTitle">Today's Gallery</div>
+            <div id="SmallTitle">Created by users from all over the world, Today's theme is: Cat!</div>
+        </div>
+
+        <div id="displayBox">
+            <% paintings.forEach( (painting) => { %>
+                <%- include('individualPainting.ejs', {painting: painting}) %>
+            <% }) %>
+        
+           
+
+
+            <!-- <div class="doodleUnit">
+                <div class="paintingArea">
+                    <div class="CanvasLong">
+
+                    </div>
+                </div>
+                <div class="walltextArea">
+
+                </div>
+
+            </div> -->
+
+
+
+        </div>
+
+        <div id="footerArea"></div>
+       
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

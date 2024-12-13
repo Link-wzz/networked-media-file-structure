@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game End Page</title>
+    <link rel="stylesheet" href="css/gameEnd.css">
+</head>
+<body style="background-image: url('<%= image %>');">
+    <%- include("nav.ejs", {}) %>
+    <div id="central-container">
+        <div id="ImgBox">
+            <div id="finishedImg">
+                <% if (image) { %>
+                    <img src="<%= image %>" id="createdWork" alt="Finished Artwork">
+                <% } else { %>
+                    <p>No image to display.</p>
+                <% } %>
+            </div>
+        </div>
+        <div id="ScriptBox">
+            <div id="congratulation">Congratulation, what a master piece!</div>
+            <div id="EnterNameArea">
+                <form method="POST" action="/updateName" id="updateForm">
+                    <div id="prompt">Please name your work:&nbsp</div>
+                    <input type="text" name="workName" id="workName" placeholder ="Type here">
+                    <input type="submit" name="submitbutton" id="changeNameBtn" value="submit">
+                </form>
+            </div>
+            <div id="ContentArea">
+                Your work has been collected by our today gallery! 
+                <br>
+                <div>
+                    <a href="/gallery" style=" color: inherit; ">Click here to view it in the gallery!</a>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="ratioData" style="display: none;"><%= ratio %></div>
+    <script src="js/gameEnd.js"></script>
+</body>
+</html>

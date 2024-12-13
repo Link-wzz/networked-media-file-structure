@@ -1,0 +1,42 @@
+<% let today = new Date()%>
+<% if(painting.createdTime === today.toLocaleDateString() ){%> 
+    <div class="doodleUnit">
+
+        <div class="paintingArea">
+            <% if(painting.ratio === "11") {%>
+            <div class="CanvasSquare">
+                <img class= "squareImage" src="<%= painting.image %>" />
+            </div>
+            <% } else if(painting.ratio === "43") {%>
+            <div class="CanvasLong">
+                <img class= "longImage" src="<%= painting.image %>" />
+            
+            </div>
+                
+            <% } else if(painting.ratio === "32") {%>
+                <div class="CanvasTall">
+                    <img class= "tallImage" src="<%= painting.image %>" />
+            
+                </div>
+
+            <% }%>
+        </div>
+        <div class="walltextArea">
+            <div class="wallText">
+                <div class="wallTextAuthor"><%= painting.author%></div>
+                <div class="wallTextName"><%= painting.name%></div>
+                <div class="wallTextTime"><%= painting.createdTime%></div>
+            </div>
+
+            <form method="POST" action="/save">
+                <input type="hidden" name="paintingId" value="<%= painting._id %>">
+                <button type="submit" id="saveButton" style="background: none; border: none; padding: 0; cursor: pointer;">
+                    <img src="images/save.png" alt="Save" class="saveicon" >
+                </button>
+            </form>
+        </div>
+    
+    </div> 
+
+<%}%>
+
